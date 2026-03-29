@@ -98,6 +98,10 @@ export default function Sidebar() {
             <LogOut size={20} />
             <span>{t('logout')}</span>
           </button>
+          
+          <div className="sidebar-developer" style={{ fontSize: '11px', textAlign: 'center', marginTop: '1rem', color: 'var(--text-secondary)' }}>
+            Developed by Santosh Darisi
+          </div>
         </div>
       </aside>
       {mobileOpen && <div className="sidebar-backdrop" onClick={() => setMobileOpen(false)} />}

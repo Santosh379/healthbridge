@@ -228,6 +228,7 @@ export default function Landing() {
           </div>
           <div className="footer-bottom">
             <p>© 2026 HealthBridge. Built for universal healthcare access. 💙</p>
+            <p>Developed by Santosh Darisi</p>
           </div>
         </div>
       </footer>
