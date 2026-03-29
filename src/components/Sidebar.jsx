@@ -82,18 +82,6 @@ export default function Sidebar() {
             <button className="control-btn" onClick={toggleTheme} title="Toggle theme">
               {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
             </button>
-            <div className="lang-selector">
-              <Globe size={18} />
-              <select
-                value={language}
-                onChange={(e) => changeLanguage(e.target.value)}
-                className="lang-select"
-              >
-                <option value="en">EN</option>
-                <option value="ta">தமிழ்</option>
-                <option value="hi">हिंदी</option>
-              </select>
-            </div>
           </div>
 
           <div className="sidebar-user">

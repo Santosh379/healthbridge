@@ -36,9 +36,6 @@ export default function Landing() {
           <Link to="/" className="nav-logo"><Heart size={24} /> <span>HealthBridge</span></Link>
           <div className="nav-right">
             <button className="nav-theme-btn" onClick={toggleTheme}>{theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}</button>
-            <select className="nav-lang-select" value={language} onChange={e => changeLanguage(e.target.value)}>
-              <option value="en">English</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option>
-            </select>
             <Link to="/login" className="nav-link">{t('login')}</Link>
             <Link to="/register" className="btn btn-primary nav-cta">{t('getStarted')}</Link>
           </div>
