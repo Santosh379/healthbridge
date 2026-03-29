@@ -5,6 +5,7 @@ import ChatBot from './components/ChatBot';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Portfolio from './pages/Portfolio';
 import Dashboard from './pages/Dashboard';
 import DoctorFinder from './pages/DoctorFinder';
 import DoctorProfile from './pages/DoctorProfile';
@@ -32,7 +33,7 @@ export default function App() {
   const { isAuthenticated } = useAuth();
   const location = useLocation();
 
-  const publicPaths = ['/', '/login', '/register'];
+  const publicPaths = ['/', '/login', '/register', '/portfolio'];
   const isPublicPage = publicPaths.includes(location.pathname);
 
   if (isPublicPage) {
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     );
   }

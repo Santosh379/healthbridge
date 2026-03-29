@@ -35,6 +35,7 @@ export default function Landing() {
         <div className="nav-container">
           <Link to="/" className="nav-logo"><Heart size={24} /> <span>HealthBridge</span></Link>
           <div className="nav-right">
+            <Link to="/portfolio" className="nav-link">Portfolio</Link>
             <button className="nav-theme-btn" onClick={toggleTheme}>{theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}</button>
             <Link to="/login" className="nav-link">{t('login')}</Link>
             <Link to="/register" className="btn btn-primary nav-cta">{t('getStarted')}</Link>
@@ -228,7 +229,7 @@ export default function Landing() {
           </div>
           <div className="footer-bottom">
             <p>© 2026 HealthBridge. Built for universal healthcare access. 💙</p>
-            <p>Developed by Santosh Darisi</p>
+            <p>Developed by <Link to="/portfolio" style={{ color: 'inherit', textDecoration: 'underline' }}>Santosh Darisi</Link></p>
           </div>
         </div>
       </footer>
