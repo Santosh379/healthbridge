@@ -59,13 +59,10 @@ export default function Landing() {
               <Bot size={14} /> AI-Powered Healthcare for Everyone
             </div>
             <h1 className="hero-title">
-              Your Health,<br />
-              <span className="hero-gradient-text">Reimagined with AI</span>
+              {t('heroTitle')}
             </h1>
             <p className="hero-subtitle">
-              HealthBridge connects patients with doctors worldwide. Smart symptom analysis, 
-              voice-enabled checkups, drug safety alerts, and instant AI assistance — 
-              all in one platform built for the future of healthcare.
+              {t('heroSubtitle')}
             </p>
             <div className="hero-actions">
               <Link to="/register" className="btn btn-primary btn-xl hero-btn">
