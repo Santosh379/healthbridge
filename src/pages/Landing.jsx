@@ -6,7 +6,7 @@ import './Landing.css';
 
 export default function Landing() {
   const { theme, toggleTheme } = useTheme();
-  const { language, setLanguage, t } = useLanguage();
+  const { language, changeLanguage, t } = useLanguage();
 
   const features = [
     { icon: <Bot size={28} />, title: "AI Health Assistant", desc: "24/7 intelligent chatbot for instant health guidance, first aid, and medical advice in real-time", color: "#6366f1", tag: "AI-Powered" },
@@ -36,11 +36,11 @@ export default function Landing() {
           <Link to="/" className="nav-logo"><Heart size={24} /> <span>HealthBridge</span></Link>
           <div className="nav-right">
             <button className="nav-theme-btn" onClick={toggleTheme}>{theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}</button>
-            <select className="nav-lang-select" value={language} onChange={e => setLanguage(e.target.value)}>
+            <select className="nav-lang-select" value={language} onChange={e => changeLanguage(e.target.value)}>
               <option value="en">English</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option>
             </select>
-            <Link to="/login" className="nav-link">Login</Link>
-            <Link to="/register" className="btn btn-primary nav-cta">Get Started</Link>
+            <Link to="/login" className="nav-link">{t('login')}</Link>
+            <Link to="/register" className="btn btn-primary nav-cta">{t('getStarted')}</Link>
           </div>
         </div>
       </nav>
@@ -69,7 +69,7 @@ export default function Landing() {
             </p>
             <div className="hero-actions">
               <Link to="/register" className="btn btn-primary btn-xl hero-btn">
-                Start Free <ArrowRight size={18} />
+                {t('getStarted')} <ArrowRight size={18} />
               </Link>
               <Link to="/login" className="btn btn-secondary btn-xl hero-btn">
                 Explore Platform
