@@ -9,8 +9,20 @@ import {
 import { useState } from 'react';
 import './Sidebar.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function Sidebar() {
-  const { user, logout } = useAuth();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { user, logout } = useAuth();
   const { t, language, changeLanguage } = useLanguage();
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();

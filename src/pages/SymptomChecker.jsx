@@ -5,8 +5,20 @@ import { symptomsList, symptomCategories, analyzeSymptoms } from '../data/sympto
 import { Stethoscope, AlertCircle, CheckCircle, AlertTriangle, Activity, ArrowRight, RotateCcw, Mic, MicOff, Search, ChevronDown, Home, Heart, Shield, X } from 'lucide-react';
 import './SymptomChecker.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function SymptomChecker() {
-  const { t } = useLanguage();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { t } = useLanguage();
   const [selected, setSelected] = useState([]);
   const [result, setResult] = useState(null);
   const [analyzing, setAnalyzing] = useState(false);

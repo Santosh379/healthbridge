@@ -1,8 +1,21 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
+}
 
-export function AuthProvider({ children }) {
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+export function AuthProvider({
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+ children }) {
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -66,3 +79,4 @@ export function AuthProvider({ children }) {
 }
 
 export const useAuth = () => useContext(AuthContext);
+}

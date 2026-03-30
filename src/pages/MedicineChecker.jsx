@@ -4,8 +4,20 @@ import { medicineDatabase, checkInteractions } from '../data/medicines';
 import { Pill, AlertTriangle, AlertCircle, CheckCircle, Plus, X, Search, Shield } from 'lucide-react';
 import './MedicineChecker.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function MedicineChecker() {
-  const { t } = useLanguage();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { t } = useLanguage();
   const [medicines, setMedicines] = useState([]);
   const [input, setInput] = useState('');
   const [suggestions, setSuggestions] = useState([]);

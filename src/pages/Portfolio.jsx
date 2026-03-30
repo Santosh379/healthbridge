@@ -4,8 +4,20 @@ import { motion } from 'framer-motion';
 import { Mail, Briefcase, GraduationCap, Code2, Monitor, Database, Wrench, Brain, Terminal, Globe, User, ArrowLeft, Send, Download } from 'lucide-react';
 import './Portfolio.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function Portfolio() {
-  useEffect(() => {
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+useEffect(() => {
     if (window.location.hash) {
       const id = window.location.hash.substring(1);
       setTimeout(() => {

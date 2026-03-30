@@ -5,8 +5,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft, CheckCircle, Calendar, Clock, User, ChevronRight } from 'lucide-react';
 import './BookAppointment.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function BookAppointment() {
-  const { id } = useParams();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { id } = useParams();
   const navigate = useNavigate();
   const { t } = useLanguage();
   const doctor = doctors.find(d => d.id === parseInt(id));

@@ -33,16 +33,26 @@ const userIcon = new L.Icon({
 });
 
 // Component to recenter map when userPos changes
-function RecenterMap({ center }) {
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+function RecenterMap({
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+center }) {
   const map = useMap();
   useEffect(() => {
     if (center) map.setView(center, 14);
   }, [center, map]);
   return null;
-}
-
-export default function Emergency() {
-  const { t } = useLanguage();
+export default function Emergency() {const { t } = useLanguage();
   const [expandedGuide, setExpandedGuide] = useState(null);
   const [userPos, setUserPos] = useState(null);
   const [mapError, setMapError] = useState(null);

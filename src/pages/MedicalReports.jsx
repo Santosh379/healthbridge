@@ -4,8 +4,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { FileText, Download, Printer, Eye, Calendar, User, Pill, Clock, Building, ArrowLeft, CheckCircle } from 'lucide-react';
 import './MedicalReports.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function MedicalReports() {
-  const { user } = useAuth();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { user } = useAuth();
   const { t } = useLanguage();
   const [selectedReport, setSelectedReport] = useState(null);
   const [reports, setReports] = useState([]);

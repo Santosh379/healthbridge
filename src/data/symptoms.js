@@ -1,3 +1,15 @@
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
 export const symptomCategories = [
   { id: 'head', name: 'Head & Neurological', icon: '🧠', color: '#8b5cf6' },
   { id: 'chest', name: 'Chest & Respiratory', icon: '🫁', color: '#ef4444' },
@@ -401,5 +413,4 @@ export function analyzeSymptoms(selectedSymptoms) {
     primary: matches[0],
     alternatives: matches.slice(1, 4),
     selectedSymptoms
-  };
-}
+  };

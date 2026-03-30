@@ -16,8 +16,21 @@ import MedicineChecker from './pages/MedicineChecker';
 import MedicalReports from './pages/MedicalReports';
 import Emergency from './pages/Emergency';
 import UserProfile from './pages/UserProfile';
+}
 
-function AppLayout({ children }) {
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+function AppLayout({
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+ children }) {
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
   return (
     <div className="app-layout">
       <Sidebar />
@@ -30,6 +43,7 @@ function AppLayout({ children }) {
 }
 
 export default function App() {
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
   const { isAuthenticated } = useAuth();
   const location = useLocation();
 

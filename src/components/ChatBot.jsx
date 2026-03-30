@@ -3,8 +3,20 @@ import { MessageCircle, X, Send, Bot, User, Mic, MicOff, Minimize2 } from 'lucid
 import { getAIResponse } from '../data/chatbot';
 import './ChatBot.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function ChatBot() {
-  const [isOpen, setIsOpen] = useState(false);
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
     { sender: 'bot', text: "Hello! 👋 I'm your HealthBridge AI Assistant. I can help with symptoms, medicine info, first aid, and health tips. How can I help you today?", time: new Date() }
   ]);

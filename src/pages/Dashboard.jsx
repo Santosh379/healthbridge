@@ -6,16 +6,26 @@ import { Calendar, FileText, Heart, Activity, ChevronRight, Star, Stethoscope, A
 import { doctors } from '../data/doctors';
 import './Dashboard.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function Dashboard() {
-  const { user } = useAuth();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { user } = useAuth();
   const { t } = useLanguage();
   const role = user?.role || 'patient';
 
   if (role === 'doctor') return <DoctorDashboard user={user} t={t} />;
   if (role === 'admin') return <AdminDashboard user={user} t={t} />;
   return <PatientDashboard user={user} t={t} />;
-}
-
 function PatientDashboard({ user, t }) {
   const [appointments, setAppointments] = useState([]);
   const [countdown, setCountdown] = useState(null);
@@ -210,8 +220,6 @@ function PatientDashboard({ user, t }) {
       </div>
     </div>
   );
-}
-
 function DoctorDashboard({ user, t }) {
   const [patients] = useState([
     { name: "Ravi Kumar", time: "09:00 AM", status: "waiting", symptoms: "Fever, Headache" },
@@ -316,8 +324,6 @@ function DoctorDashboard({ user, t }) {
       </div>
     </div>
   );
-}
-
 function AdminDashboard({ user, t }) {
   return (
     <div className="dashboard animate-fade-in">
@@ -345,8 +351,6 @@ function AdminDashboard({ user, t }) {
       </div>
     </div>
   );
-}
-
 const healthTips = [
   { emoji: "💧", title: "Stay Hydrated", tip: "Drink at least 8 glasses of water daily. Dehydration can cause headaches, fatigue, and reduced concentration." },
   { emoji: "🏃", title: "Exercise Daily", tip: "Just 30 minutes of moderate exercise can reduce your risk of cardiovascular disease by 35%." },
@@ -355,3 +359,4 @@ const healthTips = [
   { emoji: "🧘", title: "Manage Stress", tip: "Practice 5 minutes of deep breathing. Chronic stress weakens immunity and raises blood pressure." },
   { emoji: "🫁", title: "Breathing Exercise", tip: "Try 4-7-8 breathing: Inhale 4s, Hold 7s, Exhale 8s. It reduces anxiety and improves focus." },
 ];
+}

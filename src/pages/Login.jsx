@@ -5,8 +5,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { Heart, Mail, Lock, LogIn, Eye, EyeOff, Stethoscope, Shield, Activity, Bot, ChevronRight } from 'lucide-react';
 import './Auth.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function Login() {
-  const { login } = useAuth();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { login } = useAuth();
   const { t } = useLanguage();
   const navigate = useNavigate();
   const [email, setEmail] = useState('');

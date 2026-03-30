@@ -1,3 +1,15 @@
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
 export const doctors = [
   { id: 1, name: "Dr. Arun Sharma", specialization: "Cardiologist", experience: 15, rating: 4.8, availability: "Available today", consultationType: "Both", hospital: "Apollo Hospitals", languages: ["English", "Hindi"], photo: null, timing: "9:00 AM - 5:00 PM", reviews: [{ patient: "Ravi K.", rating: 5, text: "Excellent cardiologist. Very thorough examination." }, { patient: "Meena S.", rating: 4, text: "Great doctor, explains everything clearly." }, { patient: "Arjun P.", rating: 5, text: "Saved my life. Highly recommend." }] },
   { id: 2, name: "Dr. Priya Nair", specialization: "Dermatologist", experience: 10, rating: 4.9, availability: "Available today", consultationType: "Online", hospital: "Fortis Hospital", languages: ["English", "Tamil"], photo: null, timing: "10:00 AM - 4:00 PM", reviews: [{ patient: "Sita R.", rating: 5, text: "Best skin treatment I ever had." }, { patient: "Deepa M.", rating: 5, text: "Very caring and professional." }] },
@@ -34,4 +46,4 @@ export const timeSlots = [
   "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM",
   "02:00 PM", "02:30 PM", "03:00 PM", "03:30 PM",
   "04:00 PM", "04:30 PM", "05:00 PM"
-];
+];

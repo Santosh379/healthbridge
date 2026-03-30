@@ -1,3 +1,15 @@
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
 const translations = {
   en: {
     // Nav
@@ -278,4 +290,4 @@ const translations = {
   }
 };
 
-export default translations;
+export default translations;

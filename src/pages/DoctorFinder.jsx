@@ -5,8 +5,20 @@ import { doctors, specializations } from '../data/doctors';
 import { Search, Filter, Star, Clock, MapPin, Video, Building, ChevronDown } from 'lucide-react';
 import './DoctorFinder.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function DoctorFinder() {
-  const { t } = useLanguage();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { t } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
   const [specFilter, setSpecFilter] = useState('');
   const [expFilter, setExpFilter] = useState('');

@@ -1,3 +1,15 @@
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
 export const chatResponses = [
   {
     keywords: ["hello", "hi", "hey", "good morning", "good evening"],
@@ -74,5 +86,4 @@ export function getAIResponse(message) {
     }
   }
 
-  return "I understand you're concerned about your health. While I don't have a specific answer for that query, here's what I recommend:\n\n1. Use our **Symptom Checker** for a detailed analysis\n2. **Find a Doctor** for professional consultation\n3. Visit the **Emergency** page if it's urgent\n\nCan you describe your symptoms in more detail? I can try to help better! 💙";
-}
+  return "I understand you're concerned about your health. While I don't have a specific answer for that query, here's what I recommend:\n\n1. Use our **Symptom Checker** for a detailed analysis\n2. **Find a Doctor** for professional consultation\n3. Visit the **Emergency** page if it's urgent\n\nCan you describe your symptoms in more detail? I can try to help better! 💙";

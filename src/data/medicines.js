@@ -1,3 +1,15 @@
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
 export const medicineDatabase = [
   { name: "Paracetamol", category: "Pain Reliever / Antipyretic", aliases: ["Acetaminophen", "Tylenol", "Crocin", "Dolo"] },
   { name: "Ibuprofen", category: "NSAID", aliases: ["Brufen", "Advil", "Motrin"] },
@@ -170,5 +182,4 @@ export function checkInteractions(medicines) {
     }
   }
 
-  return results;
-}
+  return results;

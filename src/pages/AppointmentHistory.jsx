@@ -3,8 +3,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { Calendar, Clock, X, RefreshCw, ChevronRight } from 'lucide-react';
 import './AppointmentHistory.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function AppointmentHistory() {
-  const { t } = useLanguage();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { t } = useLanguage();
   const [appointments, setAppointments] = useState([]);
   const [showModal, setShowModal] = useState(null);
 

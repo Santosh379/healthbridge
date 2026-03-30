@@ -3,9 +3,20 @@ import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import { Heart, Stethoscope, Calendar, AlertTriangle, FileText, Shield, Activity, ChevronRight, Moon, Sun, Globe, Star, ArrowRight, Bot, Pill, MapPin, Bell, Mic } from 'lucide-react';
 import './Landing.css';
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
 
 export default function Landing() {
-  const { theme, toggleTheme } = useTheme();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { theme, toggleTheme } = useTheme();
   const { language, changeLanguage, t } = useLanguage();
 
   const features = [

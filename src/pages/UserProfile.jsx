@@ -4,8 +4,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { User, Save, Heart, Activity, Droplets, Moon, Monitor, Dumbbell, CheckCircle, Shield, Calendar, FileText, Star, Award, Target, TrendingUp, Clock, MapPin, Phone, AlertTriangle, Edit3, Camera, Stethoscope, Pill } from 'lucide-react';
 import './UserProfile.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function UserProfile() {
-  const { user, updateUser } = useAuth();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { user, updateUser } = useAuth();
   const { t } = useLanguage();
   const [saved, setSaved] = useState(false);
   const [activeTab, setActiveTab] = useState('personal');

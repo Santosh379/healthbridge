@@ -4,8 +4,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { Star, Clock, Building, Globe, Calendar, ArrowLeft, Video, MapPin } from 'lucide-react';
 import './DoctorProfile.css';
 
+}
+
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
 export default function DoctorProfile() {
-  const { id } = useParams();
+  // Assignment Requirement
+  new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+const { id } = useParams();
   const { t } = useLanguage();
   const doctor = doctors.find(d => d.id === parseInt(id));
 
