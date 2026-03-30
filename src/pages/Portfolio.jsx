@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, Briefcase, GraduationCap, Code2, Monitor, Database, Wrench, Brain, Terminal, Globe, User, ArrowLeft, Send } from 'lucide-react';
+import { Mail, Briefcase, GraduationCap, Code2, Monitor, Database, Wrench, Brain, Terminal, Globe, User, ArrowLeft, Send, Download } from 'lucide-react';
 import './Portfolio.css';
 
 export default function Portfolio() {
@@ -80,15 +80,20 @@ export default function Portfolio() {
           <h3>Let's Connect</h3>
           <p>Open to exploring new projects, creative ideas, and opportunities.</p>
 
-          <a href="mailto:santosh@example.com" className="btn-primary-glow">
-            <Send size={16} /> Email Me
-          </a>
+          <div className="contact-buttons-group">
+            <a href="mailto:sandysuper216@gmail.com" className="btn-primary-glow">
+              <Send size={16} /> Email Me
+            </a>
+            <a href="/healthbridge/Santosh_Resume.pdf" download className="btn-secondary-outline">
+              <Download size={16} /> Resume
+            </a>
+          </div>
 
-          <div className="social-links">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="GitHub">
+          <div className="social-links" style={{ marginTop: '15px' }}>
+            <a href="https://github.com/Santosh379" target="_blank" rel="noreferrer" className="social-btn" aria-label="GitHub">
               <Terminal size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="LinkedIn">
+            <a href="https://linkedin.com/in/santosh-darisi" target="_blank" rel="noreferrer" className="social-btn" aria-label="LinkedIn">
               <Globe size={20} />
             </a>
           </div>
