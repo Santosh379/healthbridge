@@ -1,0 +1,49 @@
+
+class SantoshDarisi_24BCE0979 {
+  printDetails_Santosh_24BCE0979() {
+    const student_Santosh_24BCE0979 = "Santosh Darisi - 24BCE0979";
+    console.log("Assignment Metadata:", student_Santosh_24BCE0979);
+  }
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+}
+
+new SantoshDarisi_24BCE0979().printDetails_Santosh_24BCE0979();
+export const doctors = [
+  { id: 1, name: "Dr. Arun Sharma", specialization: "Cardiologist", experience: 15, rating: 4.8, availability: "Available today", consultationType: "Both", hospital: "Apollo Hospitals", languages: ["English", "Hindi"], photo: null, timing: "9:00 AM - 5:00 PM", reviews: [{ patient: "Ravi K.", rating: 5, text: "Excellent cardiologist. Very thorough examination." }, { patient: "Meena S.", rating: 4, text: "Great doctor, explains everything clearly." }, { patient: "Arjun P.", rating: 5, text: "Saved my life. Highly recommend." }] },
+  { id: 2, name: "Dr. Priya Nair", specialization: "Dermatologist", experience: 10, rating: 4.9, availability: "Available today", consultationType: "Online", hospital: "Fortis Hospital", languages: ["English", "Tamil"], photo: null, timing: "10:00 AM - 4:00 PM", reviews: [{ patient: "Sita R.", rating: 5, text: "Best skin treatment I ever had." }, { patient: "Deepa M.", rating: 5, text: "Very caring and professional." }] },
+  { id: 3, name: "Dr. Rajesh Gupta", specialization: "Neurologist", experience: 20, rating: 4.7, availability: "Available tomorrow", consultationType: "Offline", hospital: "Max Healthcare", languages: ["English", "Hindi"], photo: null, timing: "8:00 AM - 2:00 PM", reviews: [{ patient: "Vikas T.", rating: 5, text: "Expert in his field." }, { patient: "Anita G.", rating: 4, text: "Thorough diagnosis." }] },
+  { id: 4, name: "Dr. Kavitha Sundaram", specialization: "Dentist", experience: 8, rating: 4.6, availability: "Available today", consultationType: "Offline", hospital: "Dental Care Plus", languages: ["English", "Tamil", "Hindi"], photo: null, timing: "9:30 AM - 6:00 PM", reviews: [{ patient: "Sundar V.", rating: 5, text: "Painless procedure. Amazing!" }, { patient: "Lakshmi P.", rating: 4, text: "Very gentle approach." }] },
+  { id: 5, name: "Dr. Amit Patel", specialization: "General Physician", experience: 12, rating: 4.5, availability: "Available today", consultationType: "Both", hospital: "City Hospital", languages: ["English", "Hindi", "Gujarati"], photo: null, timing: "8:00 AM - 8:00 PM", reviews: [{ patient: "Ram K.", rating: 4, text: "Good general checkup." }, { patient: "Priya J.", rating: 5, text: "Affordable and efficient." }] },
+  { id: 6, name: "Dr. Lakshmi Venkat", specialization: "Cardiologist", experience: 18, rating: 4.9, availability: "Available today", consultationType: "Both", hospital: "AIIMS", languages: ["English", "Tamil", "Hindi"], photo: null, timing: "9:00 AM - 3:00 PM", reviews: [{ patient: "Ganesh R.", rating: 5, text: "Top cardiologist in the country." }] },
+  { id: 7, name: "Dr. Sanjay Mehta", specialization: "Neurologist", experience: 14, rating: 4.4, availability: "Busy", consultationType: "Online", hospital: "Narayana Health", languages: ["English", "Hindi"], photo: null, timing: "11:00 AM - 5:00 PM", reviews: [{ patient: "Rohit S.", rating: 4, text: "Good diagnosis skills." }] },
+  { id: 8, name: "Dr. Anjali Reddy", specialization: "Dermatologist", experience: 9, rating: 4.7, availability: "Available tomorrow", consultationType: "Both", hospital: "Manipal Hospital", languages: ["English", "Telugu", "Hindi"], photo: null, timing: "10:00 AM - 6:00 PM", reviews: [{ patient: "Nisha K.", rating: 5, text: "Cleared my acne completely!" }] },
+  { id: 9, name: "Dr. Mohammed Irfan", specialization: "General Physician", experience: 16, rating: 4.8, availability: "Available today", consultationType: "Both", hospital: "Medanta", languages: ["English", "Hindi", "Urdu"], photo: null, timing: "8:00 AM - 7:00 PM", reviews: [{ patient: "Ahmed F.", rating: 5, text: "Very thorough and caring." }] },
+  { id: 10, name: "Dr. Deepa Krishnan", specialization: "Dentist", experience: 11, rating: 4.5, availability: "Available today", consultationType: "Offline", hospital: "Smile Dental Clinic", languages: ["English", "Tamil", "Malayalam"], photo: null, timing: "9:00 AM - 5:00 PM", reviews: [{ patient: "Arjun M.", rating: 4, text: "Good dental work." }] },
+  { id: 11, name: "Dr. Vikram Singh", specialization: "Cardiologist", experience: 22, rating: 4.9, availability: "Available tomorrow", consultationType: "Offline", hospital: "Escorts Heart Institute", languages: ["English", "Hindi", "Punjabi"], photo: null, timing: "9:00 AM - 1:00 PM", reviews: [{ patient: "Gurpreet S.", rating: 5, text: "The best heart surgeon." }] },
+  { id: 12, name: "Dr. Sneha Joshi", specialization: "Dermatologist", experience: 7, rating: 4.3, availability: "Available today", consultationType: "Online", hospital: "Skin & Care Clinic", languages: ["English", "Hindi", "Marathi"], photo: null, timing: "11:00 AM - 7:00 PM", reviews: [{ patient: "Pooja D.", rating: 4, text: "Good skin care advice." }] },
+  { id: 13, name: "Dr. Raghav Menon", specialization: "Neurologist", experience: 17, rating: 4.6, availability: "Available today", consultationType: "Both", hospital: "Aster Medcity", languages: ["English", "Malayalam", "Hindi"], photo: null, timing: "8:30 AM - 4:30 PM", reviews: [{ patient: "Vishnu N.", rating: 5, text: "Excellent neurologist." }] },
+  { id: 14, name: "Dr. Fatima Begum", specialization: "General Physician", experience: 13, rating: 4.7, availability: "Available today", consultationType: "Both", hospital: "Columbia Asia", languages: ["English", "Hindi", "Urdu"], photo: null, timing: "9:00 AM - 6:00 PM", reviews: [{ patient: "Zara K.", rating: 5, text: "Very compassionate doctor." }] },
+  { id: 15, name: "Dr. Suresh Babu", specialization: "Dentist", experience: 19, rating: 4.8, availability: "Available today", consultationType: "Offline", hospital: "Apollo Dental", languages: ["English", "Tamil", "Kannada"], photo: null, timing: "8:00 AM - 4:00 PM", reviews: [{ patient: "Karthik R.", rating: 5, text: "Painless root canal." }] },
+  { id: 16, name: "Dr. Neha Kapoor", specialization: "Cardiologist", experience: 10, rating: 4.5, availability: "Busy", consultationType: "Online", hospital: "Jaypee Hospital", languages: ["English", "Hindi"], photo: null, timing: "10:00 AM - 4:00 PM", reviews: [{ patient: "Rahul V.", rating: 4, text: "Solid cardiac care." }] },
+  { id: 17, name: "Dr. Tamil Selvan", specialization: "General Physician", experience: 25, rating: 4.9, availability: "Available today", consultationType: "Both", hospital: "Government General Hospital", languages: ["English", "Tamil"], photo: null, timing: "7:00 AM - 2:00 PM", reviews: [{ patient: "Murugan S.", rating: 5, text: "Legendary physician." }] },
+  { id: 18, name: "Dr. Riya Banerjee", specialization: "Dermatologist", experience: 6, rating: 4.4, availability: "Available tomorrow", consultationType: "Online", hospital: "Skin Solutions", languages: ["English", "Bengali", "Hindi"], photo: null, timing: "12:00 PM - 8:00 PM", reviews: [{ patient: "Shreya B.", rating: 4, text: "Good for cosmetic issues." }] },
+  { id: 19, name: "Dr. Kiran Rao", specialization: "Neurologist", experience: 11, rating: 4.5, availability: "Available today", consultationType: "Both", hospital: "KIMS Hospital", languages: ["English", "Telugu", "Hindi"], photo: null, timing: "9:00 AM - 5:00 PM", reviews: [{ patient: "Sai P.", rating: 4, text: "Detailed and patient." }] },
+  { id: 20, name: "Dr. Harini Devi", specialization: "Dentist", experience: 14, rating: 4.7, availability: "Offline", consultationType: "Offline", hospital: "Clove Dental", languages: ["English", "Tamil", "Hindi"], photo: null, timing: "10:00 AM - 6:00 PM", reviews: [{ patient: "Divya S.", rating: 5, text: "Best dental care." }] }
+];
+
+export const specializations = [
+  "Cardiologist",
+  "Dermatologist",
+  "Neurologist",
+  "Dentist",
+  "General Physician"
+];
+
+export const timeSlots = [
+  "09:00 AM", "09:30 AM", "10:00 AM", "10:30 AM",
+  "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM",
+  "02:00 PM", "02:30 PM", "03:00 PM", "03:30 PM",
+  "04:00 PM", "04:30 PM", "05:00 PM"
+];

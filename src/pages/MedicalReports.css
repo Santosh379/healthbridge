@@ -1,0 +1,224 @@
+.medical-reports { animation: fadeIn 0.4s ease; }
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 18px;
+}
+
+.report-card {
+  padding: 22px;
+  animation: slideInUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+.report-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.report-type-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--primary-100);
+  color: var(--primary-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .report-type-icon {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.report-card-header h3 { font-size: 16px; }
+
+.report-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.report-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.report-detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.report-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Report Document */
+.report-document {
+  padding: 40px;
+  max-width: 800px;
+}
+
+.report-hospital-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hospital-logo {
+  font-size: 40px;
+}
+
+.report-hospital-header h2 {
+  font-size: 22px;
+  color: var(--primary-600);
+}
+
+.report-hospital-header > p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.report-doc-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.report-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 20px 0;
+}
+
+.report-patient-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.rpi-row {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.rpi-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+  min-width: 140px;
+}
+
+.rpi-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.report-section {
+  margin-bottom: 20px;
+}
+
+.report-section h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--primary-600);
+}
+
+.report-section p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.diagnosis-text {
+  font-weight: 500;
+  color: var(--text-primary) !important;
+}
+
+/* Prescription Table */
+.prescription-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.prescription-table th,
+.prescription-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+}
+
+.prescription-table th {
+  background: var(--bg-secondary);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.rx-medicine {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.report-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.report-signature {
+  text-align: center;
+}
+
+.report-signature p:first-child {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.signature-line {
+  width: 160px;
+  height: 1px;
+  background: var(--text-primary);
+  margin: 24px 0 6px;
+}
+
+.sig-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.report-disclaimer {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .reports-grid { grid-template-columns: 1fr; }
+  .report-document { padding: 20px; }
+  .report-patient-info { grid-template-columns: 1fr; }
+  .report-hospital-header { flex-direction: column; text-align: center; }
+  .report-doc-actions { margin-left: 0; }
+}

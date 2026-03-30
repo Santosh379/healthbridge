@@ -1,0 +1,56 @@
+.medicine-checker { animation: fadeIn 0.4s ease; }
+.mc-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.mc-input-panel { padding: 28px; }
+.mc-input-panel h2 { font-size: 18px; margin-bottom: 4px; }
+.mc-hint { font-size: 13px; color: var(--text-secondary); margin-bottom: 18px; }
+
+.mc-search-area { position: relative; margin-bottom: 16px; }
+.mc-search-box { position: relative; }
+.mc-search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-tertiary); }
+.mc-search-input { width: 100%; padding: 14px 14px 14px 44px; border: 2px solid var(--border-color); border-radius: 14px; font-size: 15px; background: var(--bg-primary); color: var(--text-primary); outline: none; }
+.mc-search-input:focus { border-color: var(--primary-500); }
+
+.mc-suggestions { position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: var(--shadow-lg); z-index: 50; overflow: hidden; margin-top: 4px; }
+.mc-suggestion-item { display: flex; align-items: center; gap: 10px; width: 100%; padding: 12px 16px; border: none; background: none; cursor: pointer; color: var(--text-primary); transition: background 0.15s; text-align: left; }
+.mc-suggestion-item:hover { background: var(--bg-secondary); }
+.mc-suggestion-item svg:first-child { color: var(--primary-500); }
+.mc-suggestion-item svg:last-child { color: var(--text-tertiary); margin-left: auto; }
+.mc-sug-name { display: block; font-size: 14px; font-weight: 600; }
+.mc-sug-cat { font-size: 12px; color: var(--text-tertiary); }
+
+.mc-medicine-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+.mc-med-chip { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border-color); }
+.mc-med-chip svg:first-child { color: var(--primary-500); }
+.mc-med-name { display: block; font-size: 14px; font-weight: 600; }
+.mc-med-cat { font-size: 12px; color: var(--text-tertiary); }
+.mc-remove { margin-left: auto; background: none; border: none; color: var(--text-tertiary); cursor: pointer; padding: 4px; border-radius: 6px; }
+.mc-remove:hover { background: var(--danger-100); color: var(--danger-500); }
+
+.mc-check-btn { width: 100%; }
+.mc-min-hint { text-align: center; font-size: 12px; color: var(--text-tertiary); margin-top: 8px; }
+
+/* Results */
+.mc-results-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; color: var(--danger-500); }
+.mc-results-header h2 { font-size: 18px; color: var(--text-primary); }
+
+.mc-interaction-card { padding: 22px; border-left: 4px solid var(--int-color); margin-bottom: 14px; }
+.mc-int-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.mc-int-icon { flex-shrink: 0; }
+.mc-int-severity { font-size: 11px; font-weight: 800; letter-spacing: 0.05em; }
+.mc-int-header h3 { font-size: 16px; }
+.mc-int-warning { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px; }
+.mc-int-advice { display: flex; align-items: flex-start; gap: 8px; padding: 12px; background: var(--int-bg); border-radius: 8px; font-size: 13px; font-weight: 500; color: var(--int-color); }
+
+.mc-safe { padding: 48px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--success-500); }
+.mc-safe h2 { color: var(--success-600); }
+.mc-safe p { color: var(--text-secondary); font-size: 14px; max-width: 360px; }
+
+.mc-placeholder { padding: 48px 28px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--text-tertiary); }
+.mc-placeholder h3 { color: var(--text-secondary); font-size: 18px; }
+.mc-placeholder p { font-size: 14px; max-width: 320px; color: var(--text-secondary); }
+.mc-placeholder-stats { display: flex; gap: 24px; margin-top: 12px; }
+.mc-placeholder-stats div { text-align: center; }
+.mc-placeholder-stats strong { display: block; font-family: var(--font-heading); font-size: 24px; font-weight: 800; color: var(--primary-500); }
+.mc-placeholder-stats span { font-size: 12px; color: var(--text-tertiary); }
+
+@media (max-width: 1024px) { .mc-layout { grid-template-columns: 1fr; } }

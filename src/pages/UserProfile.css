@@ -1,0 +1,239 @@
+.user-profile { animation: fadeIn 0.4s ease; }
+
+.save-toast {
+  display: flex; align-items: center; gap: 8px; padding: 12px 20px;
+  background: var(--success-100); color: var(--success-700);
+  border-radius: var(--radius-md); border: 1px solid var(--success-400);
+  margin-bottom: 20px; font-weight: 600; font-size: 14px;
+  position: fixed; top: 20px; right: 20px; z-index: 1000;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+[data-theme="dark"] .save-toast { background: rgba(16,185,129,0.15); color: var(--success-400); border-color: rgba(16,185,129,0.3); }
+
+/* Profile Hero */
+.profile-hero { padding: 0; overflow: hidden; position: relative; margin-bottom: 24px; }
+.profile-hero-bg {
+  position: absolute; top: 0; left: 0; right: 0; height: 140px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  opacity: 0.9;
+}
+[data-theme="dark"] .profile-hero-bg { opacity: 0.6; }
+
+.profile-hero-content { position: relative; padding: 24px 28px 28px; }
+
+.profile-avatar-section { display: flex; align-items: flex-end; gap: 20px; margin-bottom: 24px; padding-top: 60px; }
+
+.profile-avatar-large {
+  width: 100px; height: 100px; border-radius: 24px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; border: 4px solid var(--bg-card);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+.avatar-initials { font-size: 32px; font-weight: 800; color: #fff; font-family: var(--font-heading); }
+.avatar-status-dot {
+  position: absolute; bottom: 4px; right: 4px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--success-500); border: 3px solid var(--bg-card);
+}
+
+.profile-identity h1 { font-size: 26px; margin-bottom: 8px; }
+.profile-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.profile-role-badge, .profile-blood-badge, .profile-member-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 12px; border-radius: 20px;
+  font-size: 12px; font-weight: 600;
+  background: var(--bg-secondary); color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+.profile-blood-badge { background: rgba(239,68,68,0.08); color: var(--danger-500); border-color: rgba(239,68,68,0.2); }
+
+/* Quick Stats */
+.profile-quick-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.pqs-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; background: var(--bg-secondary);
+  border-radius: 14px; border: 1px solid var(--border-color);
+}
+.pqs-icon {
+  width: 42px; height: 42px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  background: color-mix(in srgb, var(--pqs-color) 10%, transparent);
+  color: var(--pqs-color); flex-shrink: 0;
+}
+.pqs-value { display: block; font-size: 22px; font-weight: 800; font-family: var(--font-heading); }
+.pqs-label { font-size: 12px; color: var(--text-tertiary); }
+
+/* Tabs */
+.profile-tabs {
+  display: flex; gap: 4px; margin-bottom: 20px;
+  background: var(--bg-secondary); padding: 4px; border-radius: 14px;
+  border: 1px solid var(--border-color);
+}
+.profile-tab {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 16px; border: none; border-radius: 10px;
+  background: transparent; color: var(--text-secondary);
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  transition: all 0.2s;
+}
+.profile-tab:hover { color: var(--text-primary); background: var(--bg-primary); }
+.profile-tab.active { background: var(--bg-card); color: var(--primary-500); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+/* Personal Info Tab */
+.profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.profile-section-card { padding: 28px; }
+.profile-section-card h2 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin-bottom: 20px; }
+.profile-form { display: flex; flex-direction: column; gap: 14px; }
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.form-textarea {
+  width: 100%; padding: 12px 14px; border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md); font-size: 14px; font-family: var(--font-body);
+  background: var(--bg-primary); color: var(--text-primary); outline: none;
+  resize: vertical; transition: border-color 0.2s;
+}
+.form-textarea:focus { border-color: var(--primary-500); }
+
+/* BMI Card */
+.bmi-card { padding: 28px; }
+.bmi-card h2 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin-bottom: 20px; }
+.bmi-display { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.bmi-circle {
+  width: 120px; height: 120px; border-radius: 50%;
+  border: 6px solid var(--bmi-color);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.bmi-value { font-family: var(--font-heading); font-size: 32px; font-weight: 800; color: var(--text-primary); }
+.bmi-unit { font-size: 13px; color: var(--text-tertiary); font-weight: 500; }
+.bmi-scale {
+  width: 100%; height: 8px;
+  background: linear-gradient(90deg, var(--warning-400), var(--success-400), var(--success-500), var(--warning-500), var(--danger-500));
+  border-radius: 4px; position: relative;
+}
+.bmi-range {
+  position: absolute; top: -4px; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--text-primary); border: 2px solid var(--bg-card);
+  transform: translateX(-50%); box-shadow: var(--shadow-md);
+}
+.bmi-scale-labels { display: flex; justify-content: space-between; width: 100%; font-size: 11px; color: var(--text-tertiary); }
+.bmi-empty { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 30px; color: var(--text-tertiary); text-align: center; }
+.bmi-empty p { font-size: 14px; }
+.bmi-interpretation { font-size: 13px; color: var(--text-secondary); text-align: center; padding: 8px 16px; background: var(--bg-secondary); border-radius: 8px; width: 100%; }
+
+/* Health Tab */
+.health-tab { display: flex; flex-direction: column; gap: 20px; }
+.health-score-section { padding: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.hs-left h2 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin-bottom: 4px; }
+.hs-subtitle { font-size: 13px; color: var(--text-tertiary); margin-bottom: 20px; }
+
+.health-inputs { display: flex; flex-direction: column; gap: 16px; }
+.health-input-row { display: flex; align-items: center; gap: 12px; }
+.health-input-row label { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: var(--text-secondary); min-width: 160px; }
+.health-input-row input[type="range"] { flex: 1; accent-color: var(--primary-500); height: 6px; }
+.health-input-value { font-weight: 700; font-size: 14px; color: var(--primary-500); min-width: 50px; text-align: right; }
+
+.hs-right { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.score-circle-container { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.score-circle { position: relative; width: 160px; height: 160px; display: flex; align-items: center; justify-content: center; }
+.score-ring { position: absolute; inset: 0; width: 100%; height: 100%; }
+.score-ring-progress { transition: stroke-dasharray 0.8s ease; }
+.score-text { text-align: center; z-index: 1; }
+.score-value { font-family: var(--font-heading); font-size: 44px; font-weight: 800; color: var(--text-primary); display: block; }
+.score-label { font-size: 14px; color: var(--text-tertiary); }
+.score-grade { font-size: 16px; font-weight: 700; }
+
+.health-suggestions { width: 100%; }
+.health-suggestions h3 { display: flex; align-items: center; gap: 6px; font-size: 15px; margin-bottom: 10px; }
+.suggestion-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; font-size: 13px; color: var(--text-secondary); }
+.suggestion-emoji { font-size: 18px; flex-shrink: 0; }
+
+/* Health Goals */
+.health-goals-card { padding: 28px; }
+.health-goals-card h2 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin-bottom: 20px; }
+.goals-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.goal-item { padding: 16px; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border-color); }
+.goal-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.goal-icon { font-size: 20px; }
+.goal-label { font-size: 14px; font-weight: 600; flex: 1; }
+.goal-pct { font-size: 14px; font-weight: 800; font-family: var(--font-heading); }
+.goal-bar { height: 8px; background: var(--border-color); border-radius: 4px; overflow: hidden; margin-bottom: 6px; }
+.goal-bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
+.goal-detail { font-size: 12px; color: var(--text-tertiary); }
+
+/* Medical ID Tab */
+.medical-tab { display: grid; grid-template-columns: 360px 1fr; gap: 20px; align-items: start; }
+
+.medical-id-card {
+  border-radius: 20px; overflow: hidden;
+  background: linear-gradient(145deg, #1e293b, #334155);
+  color: #fff; box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+.mid-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 16px 20px; background: rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.mid-header h2 { font-size: 16px; margin: 0; }
+.mid-body { padding: 24px 20px; }
+.mid-avatar {
+  width: 64px; height: 64px; border-radius: 16px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 12px; font-size: 22px; font-weight: 800;
+}
+.mid-name { text-align: center; font-size: 20px; margin-bottom: 20px; }
+.mid-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mid-info-item {
+  padding: 10px; background: rgba(255,255,255,0.06);
+  border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);
+}
+.mid-info-label { display: block; font-size: 11px; color: rgba(255,255,255,0.5); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.05em; }
+.mid-info-value { font-size: 15px; font-weight: 700; }
+.mid-blood { color: #ef4444; font-size: 22px; font-family: var(--font-heading); }
+.mid-alert { color: #f59e0b; }
+.mid-divider { height: 1px; background: rgba(255,255,255,0.1); margin: 16px 0; }
+.mid-section h4 { display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
+.mid-section p { font-size: 14px; margin-bottom: 12px; }
+.mid-footer {
+  display: flex; justify-content: space-between; padding: 12px 20px;
+  background: rgba(255,255,255,0.05); font-size: 11px; color: rgba(255,255,255,0.4);
+}
+
+/* Medical Form */
+.medical-form-card { padding: 28px; }
+.medical-form-card h2 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin-bottom: 20px; }
+
+/* Activity Timeline */
+.activity-card { padding: 28px; grid-column: 1 / -1; }
+.activity-card h2 { display: flex; align-items: center; gap: 8px; font-size: 18px; margin-bottom: 16px; }
+.activity-timeline { display: flex; flex-direction: column; gap: 0; }
+.activity-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; position: relative; }
+.activity-item:not(:last-child)::after {
+  content: ''; position: absolute; left: 7px; top: 34px; bottom: 0;
+  width: 2px; background: var(--border-color);
+}
+.activity-dot { width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; margin-top: 2px; }
+.activity-title { display: block; font-size: 14px; font-weight: 500; }
+.activity-meta { font-size: 12px; color: var(--text-tertiary); }
+
+/* Save Button */
+.save-profile-btn { width: 100%; max-width: 400px; margin: 24px auto 0; display: flex; }
+
+@media (max-width: 1024px) {
+  .profile-grid { grid-template-columns: 1fr; }
+  .profile-quick-stats { grid-template-columns: repeat(2, 1fr); }
+  .health-score-section { grid-template-columns: 1fr; }
+  .medical-tab { grid-template-columns: 1fr; }
+  .goals-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .form-row-2 { grid-template-columns: 1fr; }
+  .health-input-row { flex-wrap: wrap; }
+  .health-input-row label { min-width: auto; }
+  .profile-avatar-section { flex-direction: column; align-items: center; text-align: center; }
+  .profile-badges { justify-content: center; }
+  .profile-quick-stats { grid-template-columns: 1fr 1fr; }
+  .profile-tab span { display: none; }
+}
