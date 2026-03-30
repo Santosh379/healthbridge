@@ -93,7 +93,7 @@ export default function Portfolio() {
             <a href="https://github.com/Santosh379" target="_blank" rel="noreferrer" className="social-btn" aria-label="GitHub">
               <Terminal size={20} />
             </a>
-            <a href="https://linkedin.com/in/santosh-darisi" target="_blank" rel="noreferrer" className="social-btn" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/santosh-darisi-206989228" target="_blank" rel="noreferrer" className="social-btn" aria-label="LinkedIn">
               <Globe size={20} />
             </a>
           </div>
