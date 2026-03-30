@@ -31,11 +31,11 @@ export default function Portfolio() {
 
   const itemVars = {
     hidden: { opacity: 0, y: 30, scale: 0.95 },
-    show: { 
-      opacity: 1, 
-      y: 0, 
+    show: {
+      opacity: 1,
+      y: 0,
       scale: 1,
-      transition: { 
+      transition: {
         type: "spring",
         bounce: 0.3,
         duration: 0.8
@@ -45,7 +45,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio-bento-page">
-      
+
       {/* Navigation */}
       <div className="portfolio-nav">
         <Link to="/" className="back-btn">
@@ -53,20 +53,20 @@ export default function Portfolio() {
         </Link>
       </div>
 
-      <motion.div 
+      <motion.div
         className="bento-container"
         variants={containerVars}
         initial="hidden"
         animate="show"
       >
-        
+
         {/* 1. Hero Cell */}
         <motion.div variants={itemVars} className="bento-card hero-cell">
-          <span className="bento-badge"><Code2 size={12} style={{marginRight: 6}}/> Digital Workspace</span>
+          <span className="bento-badge"><Code2 size={12} style={{ marginRight: 6 }} /> Digital Workspace</span>
           <h1>Santosh Darisi</h1>
           <h2><span className="premium-gradient">CSE Student @ VIT Vellore</span> | AI Enthusiast | Software Developer</h2>
           <p>
-            Building AI-powered applications and practical software tools that solve real-world problems. 
+            Building AI-powered applications and practical software tools that solve real-world problems.
             I am a Computer Science undergraduate with a strong interest in Artificial Intelligence,
             Data Science, and scalable software systems.
           </p>
@@ -79,11 +79,11 @@ export default function Portfolio() {
           </div>
           <h3>Let's Connect</h3>
           <p>Open to exploring new projects, creative ideas, and opportunities.</p>
-          
+
           <a href="mailto:santosh@example.com" className="btn-primary-glow">
             <Send size={16} /> Email Me
           </a>
-          
+
           <div className="social-links">
             <a href="https://github.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="GitHub">
               <Terminal size={20} />
@@ -97,7 +97,7 @@ export default function Portfolio() {
         {/* 3. Skills Cell */}
         <motion.div variants={itemVars} className="bento-card skills-cell" id="skills">
           <h3 className="cell-title"><Wrench size={22} /> Technical Arsenal</h3>
-          
+
           <div className="bento-skill-group">
             <h4>Programming & Backend</h4>
             <div className="bento-tags">
@@ -121,7 +121,7 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="bento-skill-group" style={{marginBottom: 0}}>
+          <div className="bento-skill-group" style={{ marginBottom: 0 }}>
             <h4>Tools & Web Technologies</h4>
             <div className="bento-tags">
               <span className="bento-tag">Git & GitHub</span>
@@ -135,7 +135,7 @@ export default function Portfolio() {
         {/* 4. Projects Cell */}
         <motion.div variants={itemVars} className="bento-card project-cell" id="projects-section">
           <h3 className="cell-title"><Monitor size={22} /> Featured Builds</h3>
-          
+
           <div className="project-wrapper">
             <div className="project-item">
               <h4>ManoMitra – AI Mental Health Chatbot</h4>
@@ -158,15 +158,15 @@ export default function Portfolio() {
         {/* 5. Experience Cell */}
         <motion.div variants={itemVars} className="bento-card experience-cell">
           <h3 className="cell-title"><Briefcase size={22} /> Internships</h3>
-          
-          <div className="timeline-list" style={{paddingLeft: '6px'}}>
+
+          <div className="timeline-list" style={{ paddingLeft: '6px' }}>
             <div className="timeline-entry">
               <div className="timeline-period">Mar 2026 – Present</div>
               <h4>AI & Machine Learning Intern</h4>
               <h5>1Stop.ai</h5>
               <p>Working on machine learning workflows including preprocessing, feature understanding, and pipeline model evaluation.</p>
             </div>
-            
+
             <div className="timeline-entry">
               <div className="timeline-period">Sept 2025 – Oct 2025</div>
               <h4>Artificial Intelligence Intern</h4>
@@ -179,30 +179,30 @@ export default function Portfolio() {
         {/* 6. Education Cell */}
         <motion.div variants={itemVars} className="bento-card education-cell">
           <h3 className="cell-title"><GraduationCap size={22} /> Academics & Languages</h3>
-          
+
           <div className="education-flex">
             <div>
-              <h4 style={{fontSize: '1.1rem', marginBottom: '4px'}}>Vellore Institute of Technology</h4>
-              <p style={{color: '#a1a1aa', fontSize: '0.95rem'}}>B.Tech Computer Science Engineering</p>
+              <h4 style={{ fontSize: '1.1rem', marginBottom: '4px' }}>Vellore Institute of Technology</h4>
+              <p style={{ color: '#a1a1aa', fontSize: '0.95rem' }}>B.Tech Computer Science Engineering</p>
               <span className="cgpa-badge">CGPA: 9.16 / 10</span>
             </div>
 
-            <div style={{marginTop: '12px'}}>
-              <h4 style={{fontSize: '0.85rem', color: '#71717a', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px'}}>Currently Learning</h4>
-              <ul style={{listStyle: 'none', padding: 0, margin: 0, color: '#d4d4d8', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '8px'}}>
+            <div style={{ marginTop: '12px' }}>
+              <h4 style={{ fontSize: '0.85rem', color: '#71717a', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>Currently Learning</h4>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#d4d4d8', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li>▹ Data Structures using C++</li>
                 <li>▹ Machine learning pipelines</li>
                 <li>▹ Backend systems using Flask</li>
               </ul>
             </div>
 
-            <div style={{marginTop: '12px'}}>
-              <h4 style={{fontSize: '0.85rem', color: '#71717a', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px'}}>Languages</h4>
-              <div className="bento-tags" style={{gap: '6px'}}>
-                <span className="bento-tag" style={{background: 'transparent', borderColor: '#4a90e2'}}>English (Fluent)</span>
-                <span className="bento-tag" style={{background: 'transparent', borderColor: '#4a90e2'}}>Telugu (Fluent)</span>
-                <span className="bento-tag" style={{background: 'transparent', borderColor: '#4a90e2'}}>Hindi (Fluent)</span>
-                <span className="bento-tag" style={{background: 'transparent', borderColor: 'rgba(255,255,255,0.1)'}}>Kannada (Basic)</span>
+            <div style={{ marginTop: '12px' }}>
+              <h4 style={{ fontSize: '0.85rem', color: '#71717a', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>Languages</h4>
+              <div className="bento-tags" style={{ gap: '6px' }}>
+                <span className="bento-tag" style={{ background: 'transparent', borderColor: '#4a90e2' }}>English (Fluent)</span>
+                <span className="bento-tag" style={{ background: 'transparent', borderColor: '#4a90e2' }}>Telugu (Fluent)</span>
+                <span className="bento-tag" style={{ background: 'transparent', borderColor: '#4a90e2' }}>Hindi (Fluent)</span>
+                <span className="bento-tag" style={{ background: 'transparent', borderColor: 'rgba(255,255,255,0.1)' }}>Kannada (Basic)</span>
               </div>
             </div>
           </div>
